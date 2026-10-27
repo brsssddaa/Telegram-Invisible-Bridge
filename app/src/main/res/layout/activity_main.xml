@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Telegram-Bridge"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Невидимый локальный мост Anti-DPI"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" />
+
+    <!-- Карточка статуса -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#1E1E1E"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● МОСТ АКТИВЕН"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Мост работает в фоне. Все банковские сервисы и Госуслуги работают напрямую."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/toggleSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:text="Статус службы"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Кнопка подключения в 1 клик -->
+    <Button
+        android:id="@+id/connectTgButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:background="#2196F3"
+        android:text="ПОДКЛЮЧИТЬ К TELEGRAM В 1 КЛИК"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Кнопка оптимизации батареи -->
+    <Button
+        android:id="@+id/batteryOptButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#2C2C2C"
+        android:text="Разрешить автозапуск и фоновую работу"
+        android:textColor="#B0BEC5"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="Приложение не создает системный VPN.\nВ строке состояния нет значка ключа.\nСбербанк и маркетплейсы работают на 100%."
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+</LinearLayout>
